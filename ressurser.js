@@ -96,16 +96,21 @@ const resources = [
 ]
 
 function openMenu(source) {
-    document.getElementById("holder-2").innerHTML = "";
+    document.getElementById("holder-2").innerHTML = ""
+    //lagde en function som skal inneholde informasjonen vår i en div.
 
-        const header = document.createElement("h2");
+        const header = document.createElement("h2")
         header.textContent = source.category;
 
-        const line = document.createElement("p");
+        const line = document.createElement("p")
         line.textContent = source.text;
 
-        const ullist = document.createElement("ul");
-
+        const ullist = document.createElement("ul")
+        //brukte create element for å lage en h2, p og ul som skal inneholde category, text og sources.
+        /*jeg brukte da textContent for å hente informasjonen fra f.eks "category"
+         og setter det da inni "header" som er "h2". det samme ble da gjort for "text" som da ble satt inn i "line".
+        
+        */
         source.sources.forEach(virk => {
 
             const lists = document.createElement("li")
@@ -118,17 +123,21 @@ function openMenu(source) {
             ullist.appendChild(lists)
 
         })
-
+        /*lagde en forEach der jeg brukte "creatElement" for å lage li og a. og brukte da textContent for å hente infromasjon inn i "title".
+        jeg brukte da href for å putte inn url-en.
+        jeg brukte da appendChild for å sette at links(a) er et "child element" av lists(li) og satte da også lists 
+        som et "child element" av ullist(ul) for å sette både li og a under ul.*/
 
         
 
     document.getElementById("holder-2").appendChild(header)
     document.getElementById("holder-2").appendChild(line)
     document.getElementById("holder-2").appendChild(ullist)
+    /*jeg skrev ut header, line og ullist til "holder-2" som er mitt div element, der det som ligger i resourses blir skrevet ut.
+    li og a eller lists og links ligger da under ullist(ul). 
+    */ 
 }
 
-
-document.addEventListener("DOMContentLoaded", openMenu);
 
 document.getElementById("htmlknapp").addEventListener('click', function() {
     openMenu(resources[0])
@@ -150,3 +159,20 @@ document.getElementById("sanityknapp").addEventListener('click', function() {
     openMenu(resources[4])
 })
 
+/*tilslutt så skriver vi da ut til hver button der vi bruker eventlistener('click') til funksjonen openMenu.
+der har vi satt inn resources som en array[0] fra 0-4. 
+*/
+
+
+
+/*kilder-
+https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+
+https://www.w3schools.com/jsref/jsref_foreach.asp
+
+https://www.javatpoint.com/javascript-create-element
+
+https://www.w3schools.com/jsref/event_onclick.asp
+
+https://www.w3schools.com/jsref/prop_node_textcontent.asps
+*/ 

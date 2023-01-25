@@ -41,6 +41,7 @@ button{
    margin-bottom: 0px;
    border: none;
    margin-bottom: -5px;
+   transition: .3s;
   
 }
 
@@ -92,22 +93,36 @@ button:focus {
     
 }
 
-@media(min-width: 745px) {
-    body{
-        
-        width: 100%;
-}
-}
 
-@media only screen and (max-width: 550px) and (min-width: 365px){
+@media(max-width: 365px){
     body{
-       
     width: 100%;
         
     }
+
+    #res{
+        margin-top: -60px;
+    }
+
+    nav{
+        display: grid;
+        position: relative;
+        
+    }
+
+    #res h1{
+        margin-left: -10px;
+        font-size: 30px;
+    }
+
+
 }
 
-
+/*kilder-
+*søkte opp fargene som ble tatt i bruk fra google. altså søkt opp "color code".
+https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s
+https://www.emailonacid.com/blog/article/email-development/emailology_media_queries_demystified_min-width_and_max-width/
+*/
 
 
 

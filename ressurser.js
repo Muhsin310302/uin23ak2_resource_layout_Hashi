@@ -130,20 +130,6 @@ function openMenu(source) {
 
 
 
-/*function show() {
-    document.getElementById("holder").innerHTML = "";
-
-    const header = document.createElement("h2")
-    header.textContent = source.category
-
-    const line = document.createElement("p")
-    line.textContent = source.text
-
-    const ullist = document.createElement("ul")
-
-    sou
-
-}*/
 document.addEventListener("DOMContentLoaded", openMenu);
 
 document.getElementById("htmlknapp").addEventListener('click', function() {

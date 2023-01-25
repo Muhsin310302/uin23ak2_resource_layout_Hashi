@@ -128,8 +128,6 @@ function openMenu(source) {
 }
 
 
-
-
 document.addEventListener("DOMContentLoaded", openMenu);
 
 document.getElementById("htmlknapp").addEventListener('click', function() {
@@ -151,5 +149,4 @@ document.getElementById("reactknapp").addEventListener('click', function() {
 document.getElementById("sanityknapp").addEventListener('click', function() {
     openMenu(resources[4])
 })
-
 

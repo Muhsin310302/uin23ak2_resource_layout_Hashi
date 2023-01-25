@@ -9,17 +9,15 @@
 
 body{
     font-family: 'Rubik', sans-serif;
-    
-
-}
-
-#holder-1{
     width: 100%;
     max-width: var(--maxwidth);
     margin: 0 auto;
     margin-top: 4rem;
     position: relative;
+
 }
+
+
 
 #res {
     display: flex;
@@ -36,12 +34,18 @@ body{
 }
 
 button{
-   background-color: var(--grey); 
+    background-color: var(--grey); 
    display: inline-block;
    padding: .2rem .5rem; 
    margin-top: 35px;
-   
+   margin-bottom: 0px;
+   border: none;
+   margin-bottom: -5px;
   
+}
+
+button:focus {
+    background-color: var(--lightblue);
 }
 
 
@@ -79,16 +83,29 @@ button{
     
 }
 
-hidden {
-    
-    visibility: hidden;
-}
 
 #holder-2{
     border: 2px solid var(--grey);
     margin-top: 5px;
+    color: var(--grey);
+    border-top: 10px solid var(--lightblue);
+    
 }
 
+@media(min-width: 745px) {
+    body{
+        
+        width: 100%;
+}
+}
+
+@media only screen and (max-width: 550px) and (min-width: 365px){
+    body{
+       
+    width: 100%;
+        
+    }
+}
 
 
 

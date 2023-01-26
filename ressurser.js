@@ -139,6 +139,7 @@ function openMenu(source) {
 }
 
 
+
 document.getElementById("htmlknapp").addEventListener('click', function() {
     openMenu(resources[0])
 })
@@ -166,7 +167,6 @@ der har vi satt inn resources som en array[0] fra 0-4.
 
 
 /*kilder-
-https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 
 https://www.w3schools.com/jsref/jsref_foreach.asp
 
